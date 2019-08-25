@@ -1,0 +1,6 @@
+!forescout-get-policies
+!forescout-get-hosts fields=online=true
+!forescout-get-host-fields search_term=hostname case_sensitive=false host_field_type=tree_path,string match_exactly=False search_in=name,label,description
+!forescout-update-host-fields host_ip=192.168.1.212 field=fsapi_DemistoTest value="Testing new Arguments" fields_json=`{"fsapi_demisto_composite": {"age": "900", "name": "Ignatio Permutti", "alive": "false"}, "fsapi_demisto_list": ["Hey1", "Hey2", "Hey3"], "fsapi_composite_1": [{"animal": "mongoose", "sound": "squeak", "lifespan": "10", "region": "North America"}, {"animal": "squirrel", "sound": "pip", "lifespan": "5", "region": "Everywher"}]}` update_type=update
+!forescout-get-host ip=192.168.1.212 fields=fsapi_DemistoTest,fsapi_demisto_composite,fsapi_demisto_list,fsapi_composite_1
+!forescout-update-lists list_names=disallowed_names,creatures update_type=add_list_values values="ignatius,devon"

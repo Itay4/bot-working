@@ -1,0 +1,14 @@
+<FSAPI API_VERSION="2.0" TYPE="request">
+    <TRANSACTION TYPE="update">
+        <OPTIONS CREATE_NEW_HOST="false" />
+        <HOST_KEY NAME="ip" VALUE="192.168.1.212" />
+        <PROPERTIES>
+            <PROPERTY NAME="demisto_prop">
+                <VALUE>Building XML</VALUE>
+            </PROPERTY>
+            <PROPERTY NAME="DemistoTest">
+                <VALUE>Great Wisdom</VALUE>
+            </PROPERTY>
+        </PROPERTIES>
+    </TRANSACTION>
+</FSAPI>
