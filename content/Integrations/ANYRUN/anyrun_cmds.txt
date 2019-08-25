@@ -1,0 +1,3 @@
+!anyrun-get-history skip=0 team=false filter=scribbles2.txt.zip
+!anyrun-run-analysis obj_type=file file=693@66884384-c643-4343-8cf7-26f59e62a88e env_bitness=64
+!anyrun-get-report task=fe7c63ef-2b7f-4e70-b50c-996ae34b28ef
